@@ -15,7 +15,7 @@ class MahasiswaController extends Controller
     public function index()
     {
         // $mahasiswa = DB::table('students')->get();
-        $mahasiswa = \App\Student::all();
+        $mahasiswa = \App\Mahasiswa::all();
         return view('mahasiswa/index', ['mahasiswa' => $mahasiswa]);
     }
 
